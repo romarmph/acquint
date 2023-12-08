@@ -2,7 +2,9 @@
 export const content = [
   "./src/**/*.{html,js}",
   "./index.html",
-  "./pages/**/*.{html,js}",
+  "./about.html",
+  "./contact.html",
+  "./products.html",
   "./node_modules/flowbite/**/*.js",
 ];
 export const theme = {

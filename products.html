@@ -8,6 +8,36 @@
     <link rel="icon" href="assets/blue.png" />
   </head>
   <body>
+    <button
+      id="theme-toggle"
+      type="button"
+      class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 fixed bottom-4 right-4 z-50"
+    >
+      <svg
+        id="theme-toggle-dark-icon"
+        class="hidden w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+        ></path>
+      </svg>
+      <svg
+        id="theme-toggle-light-icon"
+        class="hidden w-5 h-5"
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
       <div
         class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
@@ -50,7 +80,7 @@
             <li>
               <a
                 href="/"
-                class="block px-3 py-2 text-white rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                class="block px-3 py-2 text-white rounded md:bg-transparent md:text-gray-700 md:p-0 dark:text-white md:dark:text-white"
                 aria-current="page"
                 >Home</a
               >
@@ -65,12 +95,10 @@
             <li>
               <a
                 href="products.html"
-                class="block px-3 py-2 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block px-3 py-2 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >Products</a
               >
             </li>
-
-          
           </ul>
         </div>
       </div>
@@ -89,41 +117,44 @@
             Crafted with skill and care to help our clients grow their business!
           </p>
         </div>
-        <div class="flex gap-8 mx-auto my-14">
+        <div class="flex flex-col gap-8 mx-auto my-14 md:flex-row">
           <img
             src="assets/ucpc.png"
             alt="UCPC Sample"
-            class="rounded-md w-96"
+            class="rounded-md w-96 h-fit"
           />
           <div class="flex flex-col justify-between">
-            <div>
-              <h2 class="mb-4 text-3xl font-bold text-slate-950">
+            <div class="">
+              <h2
+                class="mb-4 text-3xl font-bold text-slate-900 dark:text-slate-400"
+              >
                 Urdaneta City Paint Center Inventory Management App
               </h2>
-              <p class="mb-4">
+              <p class="mb-4 text-slate-600 dark:text-slate-500">
                 This mobile app enables Urdaneta City Paint Colors Center to
                 manage their inventory with ease. The app provides real-time
                 inventory tracking, automated reordering, and streamlined
                 inventory management processes. It also allows the center to
                 monitor stock levels, receive alerts when inventory is running
-                low, and generate reports on inventory usage. Contact us to learn
-                more about how we can help you develop a custom mobile app for
-                your business.
+                low, and generate reports on inventory usage. Contact us to
+                learn more about how we can help you develop a custom mobile app
+                for your business.
               </p>
               <div class="flex gap-8">
-                <img src="assets/Dart_logo.png" alt="" class="h-12">
-                <img src="assets/images.png" alt="" class="h-12">
-                <img src="assets/firebase-1-logo.png" alt="" class="h-12">
+                <img src="assets/Dart_logo.png" alt="" class="h-12" />
+                <img
+                  src="assets/images.png"
+                  alt=""
+                  class="h-12 dark:mix-blend-multiply"
+                />
+                <img src="assets/firebase-1-logo.png" alt="" class="h-12" />
               </div>
-              
             </div>
-            <div class="flex gap-4">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.acquint.ucpc"
-                class="inline-flex items-center justify-center px-4 py-2 mt-4 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >Learn More</a
-              >
-            
+            <a
+              href=""
+              class="inline-flex items-center justify-center px-4 py-2 mt-4 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm w-80 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              >Learn More</a
+            >
           </div>
         </div>
       </div>
@@ -145,6 +176,7 @@
         >
       </div>
     </footer>
+    <script src="src/script.js"></script>
     <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
